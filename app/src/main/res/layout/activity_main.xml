@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:backgroundTint="#00FFFFFF"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+
+    <Button
+
+        android:id="@+id/menu"
+        android:layout_width="100dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="319dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/menu"
+        android:text=""
+        android:textAllCaps="false"
+        android:textColorLink="#000000"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/titleID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck"
+        />
+    <!--android:onClick="Calc"-->
+    <TextView
+        android:id="@+id/titleID"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="556dp"
+        android:text="@string/total_solar_eclipse_calculator"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="258dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="193dp"
+        android:layout_marginEnd="76dp"
+        android:gravity="center"
+        android:text="The last total Solar eclipse was on XXX"
+        android:textAlignment="gravity"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="260dp"
+        android:layout_height="74dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="298dp"
+        android:layout_marginEnd="76dp"
+        android:gravity="center"
+        android:text="The next total Solar eclipse will be on XXX"
+        android:textAlignment="gravity"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+</RelativeLayout>
